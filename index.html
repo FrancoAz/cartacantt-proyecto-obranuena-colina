@@ -1,0 +1,53 @@
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cronograma - Proyecto de Obra Nueva</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <div>
+        <h1>Proyecto de Obra Nueva — Cronograma</h1>
+        <div class="project-info">
+          <p><strong>OBRA:</strong> PROYECTO OBRA NUEVA 153m2.</p>
+          <p><strong>DIRECCIÓN:</strong> PC 35 A LOTE 8, EL SAUZAL, COLINA.</p>
+          <p><strong>DE:</strong> PROYECTISTA – FRANCO ALVAREZ, MODELADOR BIM</p>
+          <p><strong>PARA:</strong> LUIS NAVARRETE - PROPIETARIO.</p>
+        </div>
+        <p class="muted">Carta Gantt · Contadores regresivos · Estado y progreso</p>
+      </div>
+      <div class="summary">
+        <div class="global-progress">
+          <div class="label">Progreso global</div>
+          <div class="progress-wrap" aria-hidden="true">
+            <div id="globalProgressBar" class="progress-bar" style="width:0%"></div>
+          </div>
+          <div id="globalProgressText" class="muted small">Calculando...</div>
+        </div>
+      </div>
+    </header>
+
+    <section class="timeline-section">
+      <h2 class="section-title">Carta Gantt</h2>
+      <div id="gantt" class="gantt"></div>
+    </section>
+
+    <section class="projects">
+      <h2 class="section-title">Proyectos</h2>
+      <div id="projectsList" class="projects-list">
+        <!-- project cards injected here -->
+      </div>
+    </section>
+
+    <footer class="footer muted">
+      <small>Fechas basadas en datos del proyecto · Actualizado en tiempo real</small>
+    </footer>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
