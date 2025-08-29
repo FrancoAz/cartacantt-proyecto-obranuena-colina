@@ -6,20 +6,20 @@ const projectData = [
     start: '2025-08-25T00:00:00',
     end:   '2025-09-04T23:59:59',
     subs: [
-      { name: 'Planta de Arquitectura', progress: 60 },
-      { name: 'Elevación Norte', progress: 80 },
-      { name: 'Elevación Sur', progress: 80 },
-      { name: 'Elevación Este', progress: 80 },
-      { name: 'Elevación Oeste', progress: 80 },
+      { name: 'Planta de Arquitectura', progress: 95 },
+      { name: 'Elevación Norte', progress: 95 },
+      { name: 'Elevación Sur', progress: 95 },
+      { name: 'Elevación Este', progress: 95 },
+      { name: 'Elevación Oeste', progress: 95 },
       { name: 'Gráfico de Superficies' },
-      { name: 'Emplazamiento' },
+      { name: 'Emplazamiento', progress: 80 },
       { name: 'Cuadro de superficies' },
       { name: 'Planta de Cubierta', progress: 80 },
       { name: 'Plano de ubicación' },
-      { name: "Corte A-A'" },
-      { name: "Corte B-B'" },
-      { name: "Corte C-C'" },
-      { name: "Corte D-D'" },
+      { name: "Corte A-A'", progress: 95 },
+      { name: "Corte B-B'", progress: 95 },
+      { name: "Corte C-C'", progress: 95 },
+      { name: "Corte D-D'", progress: 95 },
       { name: 'Plano de Puertas y Ventanas' },
       { name: 'Planos de Closet' },
       { name: 'Plano de cierre Perimetral' }
@@ -56,7 +56,14 @@ const projectData = [
     id: 'agua',
     name: 'Proyecto de Agua Potable',
     start: '2025-08-28T00:00:00',
-    end:   '2025-09-12T23:59:59'
+    end:   '2025-09-12T23:59:59',
+    subs: [
+      { name: 'Planta de Agua Potable fria' },
+      { name: 'Planta de Agua potable caliente' },
+      { name: 'Isometria A.fria' },
+      { name: 'Isometria A.Caliente' },
+      { name: 'Cuadro de calculos' }
+    ]
   },
   {
     id: 'alcantarillado',
